@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="bunshin의 Google Drive 데이터 접근, 사용, 저장, 공유 및 삭제 안내입니다.">
+<title>개인정보처리방침 | bunshin</title>
+<style>
+:root { color-scheme: light; --ink:#202827; --muted:#53615c; --line:#dce3dd; --accent:#225f49; --paper:#fcfdfb; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; font-size:17px; line-height:1.8; word-break:keep-all; overflow-wrap:anywhere; }
+.wrap { width:min(100% - 40px,800px); margin:auto; }
+header { border-bottom:1px solid var(--line); }
+header .wrap { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 24px; padding:14px 0; }
+.brand { font-size:24px; font-weight:700; letter-spacing:-.04em; text-decoration:none; color:var(--ink); }
+nav { display:flex; flex-wrap:wrap; gap:8px 22px; }
+a { color:var(--accent); text-underline-offset:4px; }
+nav a, .brand { display:inline-flex; align-items:center; min-height:44px; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+a:hover { text-decoration-thickness:2px; }
+main { padding:52px 0 64px; }
+.kicker { color:var(--muted); font-size:14px; margin:0 0 8px; letter-spacing:.03em; }
+h1 { font-size:clamp(30px,6vw,44px); line-height:1.3; letter-spacing:-.045em; margin:0 0 22px; }
+h2 { font-size:22px; line-height:1.5; margin:36px 0 12px; letter-spacing:-.025em; }
+p { margin:12px 0; }
+ul,ol { padding-left:24px; }
+li { margin:8px 0; }
+.lead { font-size:20px; line-height:1.8; }
+.notice { border:1px solid var(--line); padding:16px 20px; margin:24px 0; background:#f2f6ef; }
+.note,footer { color:var(--muted); font-size:14px; }
+footer { border-top:1px solid var(--line); padding:22px 0 30px; }
+@media(max-width:480px) { main { padding-top:32px; } .lead { font-size:18px; } }
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="./index.html">bunshin</a><nav aria-label="주 메뉴"><a href="./index.html">앱 소개</a><a href="./privacy.html">개인정보처리방침</a></nav></div></header>
+<main class="wrap">
+<p class="kicker">bunshin · 데이터 처리 안내</p>
+<h1>개인정보처리방침</h1>
+<p class="note">작성일: 2026-09-28 · 적용 대상: bunshin의 개인용 Google Drive 문서 전달 기능 및 이 안내 사이트</p>
+<p>bunshin은 운영자 본인의 업무 문서·EPUB 파일을 Google Drive에 업로드하고 공유 링크를 안내하는 개인용 도구입니다. 일반 대중을 대상으로 계정 연동 서비스를 제공하지 않습니다.</p>
+<h2>1. 접근하거나 처리하는 정보</h2>
+<ul>
+<li><strong>전달 대상 파일:</strong> 사용자가 업로드를 요청한 문서·EPUB·ZIP 파일과 파일명·형식·크기.</li>
+<li><strong>Drive 작업 정보:</strong> 업로드한 파일의 식별자, 이름, 크기, 공유 링크 및 공유 권한.</li>
+<li><strong>인증정보:</strong> Google OAuth 액세스 토큰, 갱신용 토큰 및 API 연결에 필요한 설정. Google 계정 비밀번호를 앱에 입력하거나 저장하지 않습니다.</li>
+<li><strong>작업 기록:</strong> 처리 결과, 파일 경로, 공유 링크, 오류 메시지 등 업무 자동화에 필요한 기록.</li>
+<li><strong>문의 내용:</strong> 문의 이메일을 보낸 경우 발신 주소와 문의 내용.</li>
+</ul>
+<p>현재 요청하는 Google Drive 권한은 기존 Drive 파일에도 접근할 수 있는 범위입니다. 앱은 승인된 권한을 사용자가 요청한 문서 전달 작업에 사용합니다.</p>
+<h2>2. 정보를 사용하는 목적</h2>
+<p>파일 업로드, 업로드 결과와 공유 권한 확인, 공유 링크 전달, 인증 유지 및 오류 확인에 사용합니다. Google API로 받은 정보를 광고 타게팅, 데이터 판매 또는 범용 인공지능 모델 학습 목적으로 사용하지 않습니다.</p>
+<h2>3. 데이터 전달과 외부 서비스</h2>
+<ul>
+<li><strong>Google:</strong> 파일은 승인한 계정의 Google Drive에 저장됩니다. 인증 요청과 API 작업에 필요한 정보가 Google에 전달됩니다.</li>
+<li><strong>파일 수신자:</strong> 전달용 파일은 링크를 가진 누구나 열람하도록 공유될 수 있습니다. 해당 링크를 받은 사람은 파일에 접근할 수 있으므로 민감한 파일은 공유 전에 확인해야 합니다.</li>
+<li><strong>업무비서 실행환경:</strong> 파일명, 처리 결과, 오류 및 공유 링크 등은 연결된 업무비서의 도구 출력·대화 기록에서 처리될 수 있습니다. Google 인증 토큰과 비밀번호를 안내 사이트나 공개 저장소에 게시하지 않습니다.</li>
+<li><strong>GitHub Pages:</strong> 이 안내 사이트의 호스팅에 사용합니다. 페이지에는 별도의 분석 스크립트, 로그인 양식 또는 파일 업로드 양식을 두지 않습니다. 호스팅 제공자는 사이트 제공·보안을 위해 접속 정보를 처리할 수 있으며, 이는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 따릅니다.</li>
+</ul>
+<h2>4. 저장과 보관</h2>
+<p>OAuth 인증정보는 운영자가 관리하는 실행환경에 저장하며 인증 갱신과 API 호출에 사용합니다. 인증정보는 재인증으로 교체하거나 운영자가 삭제할 때까지 남을 수 있습니다. 원본·작업 파일과 작업 기록은 해당 실행환경에 저장될 수 있으며, 운영자가 업무상 필요에 따라 정리합니다.</p>
+<p>Google Drive에 업로드한 파일은 사용자가 삭제할 때까지 해당 계정에 남습니다. Google 연결을 해제하더라도 이미 업로드된 파일, 기존 공유 권한 및 로컬 작업 기록이 자동으로 삭제되는 것은 아닙니다.</p>
+<h2>5. 접근 철회와 삭제</h2>
+<ul>
+<li><a href="https://myaccount.google.com/connections">Google 계정의 서드 파티 연결 관리</a>에서 bunshin의 접근 권한을 철회할 수 있습니다.</li>
+<li>업로드한 파일은 Google Drive에서 직접 삭제하고, 공유 설정에서 링크 접근을 제한하거나 해제할 수 있습니다.</li>
+<li>실행환경에 남은 인증정보·파일·작업 기록의 삭제는 운영자가 해당 저장 위치에서 별도로 처리해야 합니다.</li>
+<li>개인정보 확인·삭제 및 관련 문의는 아래 이메일로 요청할 수 있습니다. 법령상 보관 의무가 있는 경우 해당 범위에서 처리합니다.</li>
+</ul>
+<h2>6. 보호 조치와 Google API 정책</h2>
+<p>Google OAuth를 사용하며, Google API 통신은 HTTPS로 수행합니다. 인증정보를 공개 페이지나 공개 저장소에 포함하지 않습니다. 링크 공유는 링크를 가진 사람의 접근을 허용하므로, 파일 공개 범위는 별도로 관리해야 합니다.</p>
+<p>bunshin의 Google API로부터 받은 정보의 사용 및 다른 앱으로의 이전은 제한적 사용(Limited Use) 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 준수합니다.</p>
+<h2>7. 문의 및 변경 안내</h2>
+<p>운영자 문의: <a href="mailto:97wjdgusrb97@gmail.com">97wjdgusrb97@gmail.com</a></p>
+<p>데이터 처리 방식이 변경되면 이 페이지의 내용과 작성일을 갱신합니다.</p>
+<p><a href="./index.html">bunshin 앱 소개로 돌아가기</a></p>
+</main>
+<footer><div class="wrap">bunshin · 개인 업무용 문서 전송 도구<br>문의: <a href="mailto:97wjdgusrb97@gmail.com">97wjdgusrb97@gmail.com</a></div></footer>
+</body>
+</html>
